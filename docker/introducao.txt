@@ -1,0 +1,46 @@
+#Objetivo do curso.
+#O que são containers?
+    - Um container pode ser considerado um processo Isolado dentro do sistema operacional, que possui processos filhos. Esses processos pais podem ser chamados de
+    Namespaces e eles funcionam mais ou menos assim : 
+
+
+    NameSpaces 
+    -Contaner pai 1 (processo isolado que comporta os demais processos)
+        -  processo filho 1 container 1
+        -  processo filho 2 container 1
+        -  processo filho 3 container 1
+    -Container pai 2
+        -  processo filho 1 container 2
+        -  processo filho 2 container 2
+        -  processo filho 3 container 2
+
+
+#Como containers funcionam?
+
+    - Eles não funcionam exatamente como a virtualização, uma virtualização utiliza o seu próprio sistema operacional enquanto você continua executando o seu, ou
+    seja, quando rodamos uma maquina virtual, temos sua maquina principal com o seu sistema operacional rodando outra maquina que porta mais um sistema operacional,
+    enqunato no Docker trazemos um processo isolado de outra maquina porém trazendo este processo ao nosso próprio sistema, isso que faz com que os processos que trazemos
+    do docker não sejam tão pesados quanto deveriam ser.
+
+
+    -Imagens :
+
+        -Um conjunto de dependencias que podemos utilizar junto.
+
+
+#Como o Docker funciona?
+#Principais comandos.
+#Dockerfile
+
+    - utilizamos o FROM para utilizar uma imagem no dockerfile ex:
+
+    FROM: {Imagem}
+
+    RUN : { Quais os comandos que eu quero rodar nesta imagem utilizada acima } ex : apt-get install php
+
+    EXPOSE : { Portas } ex : 3000 
+
+    O dockerfile só é utilizado para modificar imagens, caso você não precise modificar uma imagem, não precisa de um Dockerfile.
+
+
+#Trabalhando com imagens Docker
