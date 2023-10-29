@@ -29,7 +29,7 @@
 
 
 #Como o Docker funciona?
-#Principais comandos.
+    - Os processos são identificados pelo próprio sistema operacional e identificados como se fossem parte do mesmo.
 #Dockerfile
 
     - utilizamos o FROM para utilizar uma imagem no dockerfile ex:
@@ -43,4 +43,11 @@
     O dockerfile só é utilizado para modificar imagens, caso você não precise modificar uma imagem, não precisa de um Dockerfile.
 
 
-#Trabalhando com imagens Docker
+#Adendos
+
+Existe um dockerfile e a partir desse arquivo nós construimos (buildamos) uma imagem.
+Existe uma camada de write dentro dos container, mas devemos lembrar que o mesmo não pode ser alterado e sim adicionado nais coisas dentro dele na camada de read e write.
+Quando geramos um build podemos dar um push e o Docker salvara nossa imagem em um cache para que não precisemos fazer download o tempo todo dos containers.
+
+
+
