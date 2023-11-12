@@ -1,0 +1,7 @@
+Quando damos docker run -p :
+
+-p serve para especificarmos uma porta para termos acesso a determinada imagem
+
+-p significa publishing e ele publica o processo para nó, nos dando acesso a essa imagem.
+
+-d detached executa separando processo do terminal

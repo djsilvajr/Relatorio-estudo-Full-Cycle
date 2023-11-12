@@ -1,0 +1,30 @@
+Neste modulo começamos estudando sobre o docker hub que é o container registry do próprio docker.
+
+Foi mostrado na aula a listagem dos containers oficiais e como são publicados as imagens nesse registry.
+
+conseguimos ver também como as imagens são feitas, pois conseguimos olhar no dockerhub o dockerfile utilizado para dar o build nas imagens oficias.
+
+Vimos comandos como ENTRYPOINT e CMD dentro do dockerfile, confesso que não entendi muito bem mas conforme o passar das aulas posso absorver melhor isso.
+
+Comandos utilizados até agora dentro do dockerfile foram 
+
+FROM (utilizando uma imagem aqui)
+
+RUN (Rodando comandos linux)
+
+COPY (seria um mount, pois ele pega uma pasta local e substitui por uma pasta dentro da imagem colocado no from,)
+
+CMD (executa um comando)
+ENTRYPOINT (Também utilizado para executar um comando, como dito antes, não entendi muito bem sobre ainda, preciso dar mais uma olhada)
+
+
+Vimos que ao criar o dockerfile utilizamos o seguinte comando para criar uma imagem baseada no dockerfile:
+
+    docker build -t usuario/minha-imagem:latest
+
+Depois disso pode dar um run na imagem
+
+docker run $(docker image ls -a -q) : esse docker -a -q vai pegar o id, estou supondo que temos apenas uma imagem pois ele pega todos ids 
+
+
+É interessante também criar imagens com o nome do seu usuario/nome-imagem para poder publicar no docker hub e é necessário também fazer login dando um docker login no terminal para podermos publicar a imagem 

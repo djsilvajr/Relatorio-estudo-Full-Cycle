@@ -1,0 +1,3 @@
+Inicio da aula foi mostrado o comando :
+
+docker ps - Comando utilizado para ver containers ativos no momento

@@ -1,0 +1,9 @@
+Foi apresentado alguns comandos que podem ser utilizados após o docker run
+
+Docker RUN(comando do próprio docker) -i(coloca o docker no modo interativo)
+-t(rodar o terminal) ubunto(Imagem):latest(versão é colocada após a imagem) bash(execução do container)
+
+pode utilizar -it ao invés de -i -t
+
+
+comando --rm remove o processo assim que ele cair
