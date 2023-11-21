@@ -1,0 +1,26 @@
+
+NETWORK
+
+docker - bridge (Comunicação entre container)
+
+docker - host (O meu container e minha maquina se conversao sem fazer uma exposicao de porta)
+
+
+coker network --driver bridge(minha NETWORK)
+
+(especificando rede) posso criar varios containers em uma rede unica que eu criar
+docker run -d -it --name ubuntu1 --network (minha NETWORK) 
+
+docker network inspect (minha NETWORK) pode ver os containers que estao na network
+
+
+
+podemos conectar um container em uma network 
+
+docker network connect (minha NETWORK) (container)
+
+
+como fazer um container acessar minha maquina?
+utilize http://host.docker.internal:porta
+
+
